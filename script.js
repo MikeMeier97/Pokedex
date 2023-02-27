@@ -5,7 +5,6 @@ let pokemonType;
 let pokemonIMG;
 let pokemonID;
 let pokemonStackShort1; 
-let pokemonStackShort2; 
 
 
 
@@ -18,17 +17,18 @@ async function loadPokemon() {
         pokemonID = ("000" + responeToJSON.id).slice(-3);
         pokemonIMG = responeToJSON.sprites.other.home.front_default;
         pokemonType = responeToJSON.types[0].type.name;
+        pokemonStackShort1 = pokemonType;
+        console.log(responeToJSON);
         renderPokemons();
     }
 }
 function renderPokemons() {
     document.getElementById("pokemons").innerHTML += `
-    <div class="pokemonCard ${responeToJSON.types[0].type.name}">
-        <p class="pokemonID">${000 + responeToJSON.id}</p>
-        <h1>${responeToJSON.name}</h1>
-        <img src="${responeToJSON.sprites.other.home.front_default}"/>
-        <p class="stackShort"></p>
-        <p class="stackShort"></p>
+    <div class="pokemonCard ${pokemonType}">
+        <p class="pokemonID">#${pokemonID}</p>
+        <h1>${pokemonName}</h1>
+        <img src="${pokemonIMG}"/>
+        <p class="stackShort">${pokemonStackShort1}</p>
     </div>
     `;
 }
