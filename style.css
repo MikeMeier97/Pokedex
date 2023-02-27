@@ -1,0 +1,111 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Baloo Bhaina 2', sans-serif;
+}
+body {
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+#pokemons{
+    display: flex; 
+    flex-wrap: wrap;
+    max-width: 100vw;
+    
+}
+.pokemonCard {
+    border-radius: 10px;
+    gap: 20px;
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+    background-color: gray;
+}
+.pokemonCard h1 {
+    color: white; 
+    font-size: 24px;
+    width: 40%;
+    float: left; 
+    margin-left: 15px; 
+    margin-top: 10px;
+} 
+.pokemonCard img {
+    width: 100px;
+    float: right;
+    margin-top: 40px;
+    margin-right: 10px;
+}
+/* Pokemon background */
+
+.fire {
+    background-color: rgb(250, 109, 112);
+}
+
+.grass {
+    background-color: rgb(80, 207, 176);
+}
+
+.water {
+    background-color: rgb(121, 191, 251);
+}
+
+.electric {
+    background-color: rgb(239, 202, 116);
+}
+
+.bug {
+    background-color: rgb(126, 180, 56);
+}
+
+.poison {
+    background-color: rgb(115, 80, 134);
+}
+
+.ground {
+    background-color: rgb(169, 129, 124);
+}
+
+.fairy {
+    background-color: rgb(180, 191, 249);
+}
+
+.normal {
+    background-color: rgb(190, 173, 154);
+}
+
+.psychic {
+    background-color: rgb(190, 69, 134);
+}
+
+.fighting {
+    background-color: rgb(75, 103, 124);
+}
+
+.rock {
+    background-color: rgb(170, 90, 63);
+}
+
+.dark {
+    background-color: rgb(90, 90, 120);
+}
+
+.dragon {
+    background-color: rgb(71, 139, 148);
+}
+
+.flying {
+    background-color: rgb(148, 178, 198);
+}
+
+.ghost {
+    background-color: rgb(51, 53, 105);
+}
+
+.ice {
+    background-color: rgb(53, 212, 244);
+}
+
+.steel {
+    background-color: rgb(96, 117, 109);
+}
