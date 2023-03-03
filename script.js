@@ -1,5 +1,5 @@
 let responeToJSON;
-let maxPokemon = 20;
+let maxPokemon = 50;
 let pokemonName; 
 let pokemonType; 
 let pokemonIMG;
